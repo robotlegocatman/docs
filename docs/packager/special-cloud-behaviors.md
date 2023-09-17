@@ -37,11 +37,14 @@ When the user pastes some text onto the page using a shortcut like ctrl+v, the t
 
 ## ☁ set clipboard {#set-clipboard}
 
-When the value of `☁ set clipboard` is changed, the page will try to store the text in the user's clipboard. This might not always work.
+When the value of `☁ set clipboard` is changed, the page will try to store the text in the user's clipboard. 
+:::warning
+Disclaimer, this might not always work depending on the OS the user running the project has.
+:::
 
 ## ☁ room id {#room-id}
 
-When the value of `☁ room id` is changed, the project ID used for syncronizing cloud variables is changed. For example, if the the project's original ID is 1234 and `☁ room id` is set to `xyz`, the new project ID will be `1234-xyz`. To reset the project ID to the original ID, set the value of `☁ room id` to an empty string.
+When the value of `☁ room id` is changed, the project ID used for syncronizing cloud variables is changed. For example, if the project's original ID is 1234 and `☁ room id` is set to `xyz`, the new project ID will be `1234-xyz`. To reset the project ID to the original ID, set the value of `☁ room id` to an empty string.
 
 This can be useful as a way to add a server selector to cloud variable projects without having to create a bunch of extra variables. Only people with the same room ID will have variables synced between them. It could take a couple seconds for cloud variables to begin working again as it has to reconnect to the cloud variable server.
 
